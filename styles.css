@@ -174,13 +174,13 @@ img {
   /* Mobile-first media query */
   @media screen and (max-width: 480px) and (orientation: portrait) {
     body {
-      padding: 15px; /* Add breathing room on small screens */
+      padding: 30px; /* Add breathing room on small screens */
     }
     
     /* Add other mobile-specific styles here */
   }
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
     nav {
         flex-direction: column;
         text-align: center;
@@ -209,7 +209,7 @@ img {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
     nav a {
         margin: 5px 0;
         font-size: 0.9rem;
