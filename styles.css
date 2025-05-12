@@ -1,0 +1,255 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f0e68c; /* This is your text colour*/
+    background-color: #1c1c1c; /* Dark grey background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation starts here */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* Hero Section which i added */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero .background-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero .btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0e68c;
+    color: #1c1c1c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.hero .btn:hover {
+    background-color: #b8860b;
+}
+
+/* Services Section. i have mentioned that i dont have the actual pictures */
+.services {
+    padding: 40px 20px;
+    background-color: #2f2f2f;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    color:#d4af37;
+}
+
+.service-card {
+    background-color: darkgrey;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card .cta-button {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    background-color: #2f2f2f;
+    padding: 20px;
+    color: #f0e68c;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.about-container {
+    border: 10px solid grey; /* Grey Border */
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    border-radius: 10px; /* Optional: To make the border slightly rounded */
+    background-color: #444; /* Slightly lighter dark grey for contrast */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #f0e68c;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+footer .social-icon {
+    color: #f0e68c;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer .social-icon:hover {
+    color: #b8860b;
+}
+/* Make images scale to screen width */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below images */
+  }
+  
+  /* Mobile-first media query */
+  @media screen and (max-width: 480px) {
+    body {
+      padding: 15px; /* Add breathing room on small screens */
+    }
+    
+    /* Add other mobile-specific styles here */
+  }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .services h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .services h2 {
+        font-size: 1.2rem;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 0.8rem;
+    }
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ffcc00; /* Yellow */
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #e6b800; /* Slightly darker yellow */
+    transform: scale(1.05);
+}
