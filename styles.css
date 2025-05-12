@@ -37,7 +37,7 @@ nav a:hover {
 }
 
 .hero .background-img {
-    max-width: 100%;
+    max-width: 150%;
     height: 100vh;
     overflow: visible;
     object-fit: cover;
@@ -168,6 +168,7 @@ footer .social-icon:hover {
 /* Make images scale to screen width */
 img {
     max-width: 100%;
+    overflow: visible;
     height: auto;
     display: block; /* Removes extra space below images */
   }
@@ -181,7 +182,7 @@ img {
     /* Add other mobile-specific styles here */
   }
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         text-align: center;
