@@ -172,7 +172,7 @@ img {
   }
   
   /* Mobile-first media query */
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) and (orientation: portrait) {
     body {
       padding: 15px; /* Add breathing room on small screens */
     }
