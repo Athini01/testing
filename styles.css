@@ -37,10 +37,8 @@ nav a:hover {
 }
 
 .hero .background-img {
-    max-width: 150%;
-    height: 100vh;
+    max-width: 100%;
     overflow: visible;
-    object-fit: cover;
 }
 
 .hero .btn {
@@ -174,7 +172,7 @@ img {
   }
   
   /* Mobile-first media query */
-  @media screen and (max-width: 480px) and (orientation: portrait) {
+  @media screen and (max-width: 480px) {
     body {
       padding: 30px; /* Add breathing room on small screens */
     }
